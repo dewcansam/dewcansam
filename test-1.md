@@ -1,13 +1,15 @@
 /***************************************************************************//*!
-	@copyright		2014-10-01
-	@file 			markdown_supported_languages
-	@version		1.0
-	@date			2023-07-17
-	@author			jincheng9
-	@details		Common programming languages supported by internet browsers
-	@bug			command bug is to list things to be done - future
-	@todo			command todo is for things that HAVE been done - past
-	@warning		command warning is for alerts - present
+    @copyright      2014-10-01
+    @attention      This work is licensed under CC BY-SA 4.0
+    @file           markdown_supported_languages
+    @version        1.0
+    @date           2023-07-17
+    @author         jincheng9
+    @details        Common programming languages supported by internet browsers
+    @bug            command bug is to list things to be done - future
+    @todo           command todo is for things that HAVE been done - past
+    @warning        command warning is for alerts - present
+    @todo           2024-05-02 22:50:50 CLS +++ added and fixed doxygen header
 ***************************************************************************** */
 For markdown texts, we need to specify the languages for corresponding syntax highlighting. 
 
