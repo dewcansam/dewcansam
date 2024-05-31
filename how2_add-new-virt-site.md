@@ -1,7 +1,9 @@
 # How2 Add A New Virtual Domain Using Port Numbers #
-Created = 2019-02-17 04:12:16  
-Updated = 2019-02-17 04:12:36  
-Author = Christopher L Smith  
+    @author         Christopher L Smith
+    @copyright      2019-02-17 04:12:16
+    @file           how2_add-new-virt-site.md
+    @version        1.1
+    @updated        2024-05-28 00:09:06 -5
 
 --------------------------------------------------------------------------------
 ### OLD CONFIG FILE ###

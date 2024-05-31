@@ -1,4 +1,5 @@
 # Help4 doxygen file template
+=============================
 
 This is the template that should be used for all files. Note that this is using 
 C-style comment heading. Other languages should use their respected comment 
@@ -7,50 +8,49 @@ However, they should be updated and placed here.
 
 <pre>
 /***************************************************************************//*!
+    @author         $name
     @copyright      $date_created
-    @attention      This work is licensed under CC BY-SA 4.0
     @file           $filename.ext
     @version        1.1
     @date           $date_updated
-    @author         $name
+    @attention      This work is licensed under CC BY-SA 4.0
     @details        expanded info for file
     @bug            command bug is to list things to be done - future
-    @todo           command todo is for things that HAVE been done - past
     @warning        command warning is for alerts - present
+    @todo           command todo is for things that HAVE been done - past
 ***************************************************************************** */
 </pre>
 
+**@author**    is the name of the author. Include a single author line for every author. **Required**
 **@copyright** is the date the file was created. This HAS to be here to fix date mangling by the OS. **Required**
-
+**@file**      is the filename. This can be filename with or without the extension, version or date if filename includes that info.
+**@version**   is the version number. Duh. Really should be in float notation N.N **Required**
+**@date**      is the date of the last edit or last modification. Does not really need to be here. **Optionial**
 **@attention** is the copyright tag. This has to be here because the copyright tag is being used for the init date. **Required**
+**@details**   is the main idea of the file or function. i.e. What am I writing this file or function for. **Required**
+**@bug**       command bug is a list of things to be done - future
+**@warning**   command warning is a list for alerts - present
+**@todo**      command todo is a list of things that HAVE been done - past **Required**
 
-**@file** is the filename. This can be filename with or without the extension, version or date if filename includes that info.
-
-**@version** is the version number. Duh. Really should be in float notation N.N **Required**
-
-**@date** is the date of the last edit or last modification. Does not really need to be here. **Optionial**
-
-**@author** is the name of the author. Include a single author line for every author. **Required**
-
-**@details** is the main idea of the file or function. i.e. What am I writing this file or function for. **Required**
-
-**@bug** command bug is a list of things to be done - future
-
-**@warning** command warning is a list for alerts - present
-
-**@todo** command todo is a list of things that HAVE been done - past **Required**
-
-I have a very different idea of what a todo is. 
-What I view as a todo is that it should be kinda of a log of things done for that file or function.
-If you stop and think a @bug, @todo, and @warning are levels for the exact same thing.
-
-Things that need to get done. A @bug is something that you have found wrong and need todo it.
+**@bug** Things that need to get done. A @bug is something that you have found wrong and need todo it.
 A @warning is something that you are trying to warn people of and probably should todo it.
 So why a @todo when a @bug can be used for the same thing.
 So I differentiate them by saying a @bug is something to be done. A @todo is something already done. 
 
-The doxygen commands @bug @warning @todo should be in that order. 
+**@warning** The doxygen commands @bug @warning @todo should be in that order.
+They **HAVE** to be in that order. Because @bug needs to be given the most attention.
+@warning is a list of tasks that are doled out.
+So it works like this. We find a problem or something that we should add. It first gets placed as
+a @bug. Then once it is taken up and assigned to someone or when someone starts working on it.
+It becomes a @warning. This is to warn people that it is a work in progress. If someone starts working
+on it and finishes it up right away then it never becomes a @warning.
+Then once done becomes a @todo. As a file log that shows a list of things done.
 Especially since the @todo should be a log that gets ammended anytime something major is done.
+
+**@todo** I have a very different idea of what a todo is. 
+What I view as a todo is that it should be kinda of a log of things done for that file or function.
+If you stop and think a @bug, @todo, and @warning are levels for the exact same thing.
+So I break them out so that they show in what stage it is in. Future @bug ; Present @warning ; Past @todo ;
 
 ## History
 
