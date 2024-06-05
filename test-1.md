@@ -1,15 +1,21 @@
+# Markdown Supported Languages
+==============================
+
+## File Header
+--------------
+
 <pre>
 /***************************************************************************//*!
+    @author         jincheng9
     @copyright      2014-10-01
     @attention      This work is licensed under CC BY-SA 4.0
     @file           markdown_supported_languages
     @version        1.0
     @date           2023-07-17
-    @author         jincheng9
     @details        Common programming languages supported by internet browsers
     @bug            command bug is to list things to be done - future
-    @todo           command todo is for things that HAVE been done - past
     @warning        command warning is for alerts - present
+    @todo           command todo is for things that HAVE been done - past
     @todo           2024-05-02 22:50:50 CLS +++ added and fixed doxygen header
 ***************************************************************************** */
 </pre>
@@ -17,13 +23,14 @@ For markdown texts, we need to specify the languages for corresponding syntax hi
 
 
 Following is an example for highlighting c++ codes in markdown texts:
-<pre>
+````text
 ```cpp
 bool getBit(int num, int i) {
     return ((num & (1<<i)) != 0);
 }
 ```
-</pre>
+````
+
 
 Which becomes:
 ```cpp
